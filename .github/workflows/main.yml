@@ -10,7 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+      	uses: actions/checkout@v3
+    	uses: azure/login@v2
+      	with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -23,11 +26,6 @@ jobs:
       - name: Build the app
         run: npm run build
 
-      - name: Deploy to Azure Blob Storage
-      - uses: actions/checkout@v3
-      - uses: azure/login@v2
-        with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
       - name: Upload to blob storage
       	uses: azure/CLI@v1
       	with:
