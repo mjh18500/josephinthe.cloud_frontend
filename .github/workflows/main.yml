@@ -1,0 +1,54 @@
+name: Blob storage website CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'  # Adjust to match your project
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: npm run build
+
+    - name: Azure Login
+      uses: azure/login@v2
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+    - name: Upload build output to Azure Blob Storage
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+          az storage blob upload-batch \
+            --account-name dev00storageaccount \
+            --auth-mode key \
+            --destination '$web' \
+            --source dist \
+            --overwrite true
+
+    - name: Purge CDN endpoint
+      uses: azure/CLI@v1
+      with:
+        inlineScript: |
+          az cdn endpoint purge \
+            --content-paths "/*" \
+            --profile-name "dev00CDNProfile" \
+            --name "dev00CDNendpoint" \
+            --resource-group "Dev_ResourceGroup1"
+
+    - name: Logout from Azure
+      run: az logout
+      if: always()
