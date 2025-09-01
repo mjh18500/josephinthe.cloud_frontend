@@ -48,7 +48,7 @@ jobs:
           az afd endpoint purge \
             --content-paths "/*" \
             --profile-name "Frontendfdprofile" \
-            --name "prod-jcloud" \
+            --endpoint-name "prod-jcloud" \
             --resource-group "Frontend_prodrg_prod"
 
     - name: Logout from Azure
