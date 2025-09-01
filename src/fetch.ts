@@ -1,12 +1,9 @@
 export async function getVisitorCount(): Promise<number> {
-  const apiKey = import.meta.env.VITE_API_KEY;
   const apiUrl = import.meta.env.VITE_API_URL;
 
   const response = await fetch(apiUrl, {
     method: 'POST',
-    headers: {
-      'Ocp-Apim-Subscription-Key': apiKey,
-    },
+    // No headers needed - API Management handles authentication automatically
   });
 
   if (!response.ok) {
