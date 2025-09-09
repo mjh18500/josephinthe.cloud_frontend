@@ -20,15 +20,15 @@ This is my personal developer portfolio, built to showcase my skills, certificat
 
 🛠️ Tech Stack
 
-Framework: Next.js / React (App Router)
+  - Framework: Next.js / React (App Router)
 
-Styling: TailwindCSS, shadcn/ui components
+  - Styling: TailwindCSS, shadcn/ui components
 
-Animations: Framer Motion
+  - Animations: Framer Motion
 
-Icons: Lucide React
+  - Icons: Lucide React
 
-Hosting: Azure Static Web Apps
+  - Hosting: Azure Static Web Apps
 
 📌 Purpose
 
@@ -40,10 +40,10 @@ As a Cloud & IT Infrastructure Engineer, most of my work happens behind the scen
 
 This portfolio is that bridge. It’s a frontend project that merges my engineering background with UI/UX principles:
 
-Proving I can work across the full stack (infra + frontend).
+  - Proving I can work across the full stack (infra + frontend).
 
-Demonstrating modern React/Tailwind/Framer Motion development.
+  - Demonstrating modern React/Tailwind/Framer Motion development.
 
-Showcasing my certifications, cloud projects, and technical expertise in a polished, user-friendly interface.
+  - Showcasing my certifications, cloud projects, and technical expertise in a polished, user-friendly interface.
 
 In short, this project reflects both sides of my career — the engineer who builds infrastructure at scale, and the developer who can ship beautiful, production-ready applications.
