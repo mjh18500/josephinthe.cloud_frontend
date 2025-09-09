@@ -1,54 +1,49 @@
-# React + TypeScript + Vite
+🌐 Joseph Hernandez — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my personal developer portfolio, built to showcase my skills, certifications, and experience in IT infrastructure and cloud engineering. The site is designed as a modern single-page application with smooth scrolling, responsive design, and interactive animations — optimized for both recruiters and engineers evaluating my technical abilities.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⚡ Single Page Portfolio — Section-based layout (Hero, About, Experience, Skills, Certifications, Contact).
 
-## Expanding the ESLint configuration
+📱 Responsive Design — Looks great on desktop, tablet, and mobile.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🎨 Modern UI/UX — Built with TailwindCSS + shadcn/ui, styled for a clean, LinkedIn/Notion-inspired look.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+🎬 Animations — Smooth transitions and dropdowns powered by Framer Motion.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+🌙 Dark/Light Mode — Theme toggle with persistence.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🖼️ Interactive Skills Grid — Tech stack icons displayed in a responsive grid.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+📂 Expandable Experience Section — Recruiters can quickly scan highlights or dive deeper into details.
+
+🛠️ Tech Stack
+
+Framework: Next.js / React (App Router)
+
+Styling: TailwindCSS, shadcn/ui components
+
+Animations: Framer Motion
+
+Icons: Lucide React
+
+Hosting: Azure Static Web Apps
+
+📌 Purpose
+
+This project is more than a portfolio — it’s a live demonstration of my frontend development skills, cloud readiness, and ability to deliver a production-quality user experience. It represents how I combine software engineering and infrastructure expertise to build scalable, professional-grade solutions.
+
+💡 Why I Built This
+
+As a Cloud & IT Infrastructure Engineer, most of my work happens behind the scenes — designing scalable systems, securing networks, and automating deployments. But I wanted a way to bring my skills into a visual story that anyone (technical or non-technical) could understand at a glance.
+
+This portfolio is that bridge. It’s a frontend project that merges my engineering background with UI/UX principles:
+
+Proving I can work across the full stack (infra + frontend).
+
+Demonstrating modern React/Tailwind/Framer Motion development.
+
+Showcasing my certifications, cloud projects, and technical expertise in a polished, recruiter-friendly interface.
+
+In short, this project reflects both sides of my career — the engineer who builds infrastructure at scale, and the developer who can ship beautiful, production-ready applications.
