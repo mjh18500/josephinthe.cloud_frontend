@@ -35,7 +35,7 @@ jobs:
       with:
         inlineScript: |
           az storage blob upload-batch \
-            --account-name frontendstor876b62c4 \
+            --account-name ${{ secrets.STORAGE_ACCOUNT_NAME }} \
             --auth-mode key \
             --destination '$web' \
             --source dist \
@@ -48,7 +48,7 @@ jobs:
           az afd endpoint purge \
             --content-paths "/*" \
             --profile-name "Frontendfdprofile" \
-            --endpoint-name "prod-jcloud" \
+            --endpoint-name ${{ secrets.ENDPOINT_NAME }} \
             --resource-group "Frontend_prodrg_prod"
 
     - name: Logout from Azure
