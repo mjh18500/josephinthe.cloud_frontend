@@ -40,3 +40,31 @@
 .read-the-docs {
   color: #888;
 }
+
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 12s ease-in-out infinite;
+}
+
+.icon-button {
+  @apply text-foreground dark:text-foreground bg-card hover:bg-muted rounded-full p-2 transition-colors;
+}

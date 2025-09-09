@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 800" preserveAspectRatio="xMidYMid slice">
+  <!-- Background gradient for visibility -->
+  <defs>
+    <linearGradient id="cloudGradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"></stop>
+      <stop offset="100%" stop-color="#e0f2ff" stop-opacity="0.9"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Wide cartoonish cloud shape -->
+  <path d="M400 600
+       C 200 580, 200 400, 500 400
+       C 480 200, 900 150, 1100 350
+       C 1250 100, 1750 150, 1700 400
+       C 2100 350, 2250 500, 2100 600
+       Z" fill="url(#cloudGradient)"></path>
+
+  <!-- Soft blur outline for contrast -->
+  <ellipse cx="1200" cy="620" rx="1100" ry="180" fill="#ffffff" opacity="0.35"></ellipse>
+</svg>

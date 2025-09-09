@@ -1,5 +1,14 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .icon-button {
+    @apply p-2 rounded-full bg-card hover:bg-muted text-foreground transition-colors;
+  }
+}
 
 @custom-variant dark (&:is(.dark *));
 
@@ -143,9 +152,9 @@ button:focus-visible {
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
+  --background: oklch(20.019% 0.00002 271.152);
   --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
+  --card: oklch(21.779% 0.00002 271.152);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.205 0 0);
   --popover-foreground: oklch(0.985 0 0);
@@ -183,4 +192,13 @@ button:focus-visible {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html, body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.icon-button {
+  @apply text-foreground dark:text-foreground bg-card hover:bg-muted rounded-full p-2 transition-colors;
 }
