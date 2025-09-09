@@ -8,7 +8,7 @@ This is my personal developer portfolio, built to showcase my skills, certificat
 
 📱 Responsive Design — Looks great on desktop, tablet, and mobile.
 
-🎨 Modern UI/UX — Built with TailwindCSS + shadcn/ui, styled for a clean, LinkedIn/Notion-inspired look.
+🎨 Modern UI/UX — Built with TailwindCSS + shadcn/ui, styled for a clean look.
 
 🎬 Animations — Smooth transitions and dropdowns powered by Framer Motion.
 
@@ -16,7 +16,7 @@ This is my personal developer portfolio, built to showcase my skills, certificat
 
 🖼️ Interactive Skills Grid — Tech stack icons displayed in a responsive grid.
 
-📂 Expandable Experience Section — Recruiters can quickly scan highlights or dive deeper into details.
+📂 Expandable Experience Section — Quickly scan highlights or dive deeper into details.
 
 🛠️ Tech Stack
 
@@ -44,6 +44,6 @@ Proving I can work across the full stack (infra + frontend).
 
 Demonstrating modern React/Tailwind/Framer Motion development.
 
-Showcasing my certifications, cloud projects, and technical expertise in a polished, recruiter-friendly interface.
+Showcasing my certifications, cloud projects, and technical expertise in a polished, user-friendly interface.
 
 In short, this project reflects both sides of my career — the engineer who builds infrastructure at scale, and the developer who can ship beautiful, production-ready applications.
