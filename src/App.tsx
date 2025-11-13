@@ -326,7 +326,7 @@ function App() {
               
               <div className="grid gap-6 md:grid-cols-2">
                 <a
-                  href="https://learn.microsoft.com/en-us/credentials/certifications/azure-administrator/?practice-assessment-type=certification"
+                  href="https://learn.microsoft.com/api/credentials/share/en-us/Joseph-9560/D8EF1A1C72777DB4?sharingId=D2A3415349F77F0D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-4 p-4 rounded-2xl shadow-md hover:shadow-lg transition bg-card text-card-foreground"
