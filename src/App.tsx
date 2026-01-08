@@ -1,6 +1,6 @@
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Mail, Linkedin, Github } from 'lucide-react'
+import { Mail, Linkedin, Github, Download } from 'lucide-react'
 import { motion } from 'motion/react'
 import { useEffect, useState } from 'react'
 import { getVisitorCount } from './fetch'
@@ -53,6 +53,11 @@ function App() {
                     <Github className="mr-2 h-5 w-5" /> GitHub
                   </a>
                 </Button>
+                <Button asChild variant="outline">
+                  <a href="/Joseph Hernandez_Resume.pdf" download>
+                    <Download className="mr-2 h-5 w-5" /> Download Resume
+                  </a>
+                </Button>        
                 <title>Joseph in the .Cloud</title>
               </div>
             </motion.header>
