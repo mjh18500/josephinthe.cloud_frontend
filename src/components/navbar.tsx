@@ -21,7 +21,7 @@ export default function Navbar() {
           <a href="#hero" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Home</a>
           <a href="#skills" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Skills</a>
           <a href="#certs" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Certifications</a>
-          <a href="#contact" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Blog</a>
+          <a href="https://www.linkedin.com/pulse/from-burnout-blueprint-my-cloud-resume-challenge-joseph-hernandez-8fxsc/" className="hover:text-blue-500 dark:hover:text-blue-400 transition-colors">Blog</a>
           <DarkModeToggle />
         </div>
 
@@ -46,7 +46,7 @@ export default function Navbar() {
             <a href="#hero" className="block text-foreground hover:text-blue-500 dark:hover:text-blue-400">Home</a>
             <a href="#skills" className="block text-foreground hover:text-blue-500 dark:hover:text-blue-400">Skills</a>
             <a href="#certs" className="block text-foreground hover:text-blue-500 dark:hover:text-blue-400">Certifications</a>
-            <a href="#contact" className="block text-foreground hover:text-blue-500 dark:hover:text-blue-400">Blog</a>
+            <a href="https://www.linkedin.com/pulse/from-burnout-blueprint-my-cloud-resume-challenge-joseph-hernandez-8fxsc/" className="block text-foreground hover:text-blue-500 dark:hover:text-blue-400">Blog</a>
             <DarkModeToggle />
           </motion.div>
         )}
